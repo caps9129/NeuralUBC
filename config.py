@@ -98,6 +98,8 @@ class TrainConfig:
     device: str = "cuda"
     lr: float = 3e-4
     weight_decay: float = 0.01
+    gate_enable: bool = True
+    gate_tau: float = 0.7
 
     # Online update style
     batch_size_round: int = 128             # 1 means true online, >1 means batched replay
